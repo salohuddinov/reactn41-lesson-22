@@ -1,0 +1,299 @@
+@use "../global";
+@use "../components/upcoming-sermon";
+@use "../components/blog-card";
+@use "../utils/mixins" as mxn;
+@use "../utils/variables" as var;
+
+
+.navbar__hight {
+    height: 70px;
+}
+
+.navbar__btn {
+    width: 185px;
+    height: 60px;
+    background: #1C1E53;
+    padding: 20px 48px;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+}
+
+.about__hero {
+    display: flex;
+    margin-top: 200px;
+    width: 1282px;
+    height: 337.053px;
+    flex-shrink: 0;
+
+    .content {
+        width: 595px;
+        height: 303px;
+        flex-shrink: 0;
+
+        .content__h5 {
+            width: 419px;
+            color: #282938;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+        }
+
+        .content__h2 {
+            width: 595px;
+            color: #282938;
+            font-family: Poppins;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 74px;
+        }
+
+        .content__p {
+            width: 484px;
+            color: #282938;
+            text-align: justify;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            opacity: 0.7;
+        }
+    }
+
+    .hero__img {
+        width: 640px;
+        height: 337.053px;
+        flex-shrink: 0;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+}
+
+.how__we {
+    margin-top: 126px;
+    margin-bottom: 30px;
+    width: 1280px;
+    height: 716px;
+    flex-shrink: 0;
+
+    .para {
+        display: flex;
+        width: 1280px;
+        height: 376px;
+        flex-shrink: 0;
+        background: #F4F5F5;
+
+        .bop {
+            width: 515px;
+            height: 170px;
+            margin-left: 80px;
+            margin-top: 100px;
+
+            .bop__h3 {
+                width: 515px;
+                color: #282938;
+                font-family: Poppins;
+                font-size: 38px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 56px;
+            }
+
+            .bop__p {
+                width: 515px;
+                color: #282938;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .we__img {
+        width: 1280px;
+        height: 340px;
+        flex-shrink: 0;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+}
+
+.our__team {
+    margin-top: 125px;
+    width: 100%;
+    height: 712px;
+    flex-shrink: 0;
+    background: #F4F6FC;
+
+    .team__h1 {
+        padding-top: 125px;
+        color: #282938;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 64px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 30px;
+        margin-top: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1280px;
+        height: 344px;
+        flex-shrink: 0;
+
+        .card {
+            width: 296px;
+            height: 344px;
+            flex-shrink: 0;
+            background: #FFF;
+
+            .card__img {
+                margin-top: 48px;
+                margin-right: auto;
+                margin-left: auto;
+                width: 168px;
+                height: 168px;
+                flex-shrink: 0;
+                border-radius: 168px;
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            }
+
+            .card__h3 {
+                margin-top: 15px;
+                color: #1D2130;
+                margin-right: auto;
+                margin-left: auto;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36px;
+            }
+
+            .card__p {
+                margin-right: auto;
+                margin-left: auto;
+                color: #1D2130;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.gost {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    background: #1C1E53;
+
+    .footer__left {
+        display: block;
+    }
+
+    .footer__logo {
+        display: block;
+        margin-left: 150px;
+        padding-top: 70px;
+    }
+
+    .left__p {
+        display: block;
+        margin-top: 20px;
+        margin-left: 150px;
+        width: 399px;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        opacity: 0.8;
+    }
+
+    .info {
+        display: flex;
+        margin-left: 150px;
+        gap: 50px;
+        width: 457px;
+        height: 95px;
+        flex-shrink: 0;
+        background: #FCD980;
+
+        .info__left {
+            margin-left: 55px;
+        }
+
+        .info__h2 {
+            display: block;
+            padding-top: 10px;
+            color: #282938;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+        }
+
+        .info__h3 {
+            display: block;
+            color: #282938;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            opacity: 0.8;
+        }
+    }
+
+    .footer__right {
+        display: block;
+        margin-left: 800px;
+        margin-top: -220px;
+
+        .right__h2 {
+            width: 333px;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px;
+        }
+
+        .right__p {
+            width: 399px;
+            color: #F4F6FC;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            opacity: 0.8;
+        }
+
+        .right__svg {
+            display: flex;
+            margin-top: 30px;
+            gap: 50px;
+        }
+    }
+}
